@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		/*地图*/
+		.box{
+			width: 600px;
+			height: 600px;
+			margin: 10px auto;
+		}
+		.box_row{
+			overflow: hidden;
+		}
+		.box_col{
+			float: left;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #000;
+			box-sizing:border-box;
+		}
+	</style>
+</head>
+<body>
+	<script src="js/map.js"></script>
+	<script src="js/block.js"></script>
+	<script src="js/food.js"></script>
+	<script src="js/snake.js"></script>
+	<script src="js/game.js"></script>
+
+	<script>
+		// 定义蛇所需要的图片
+		var snakeObj = {
+			head_pic: ["img/1.png", "img/2.png", "img/3.png", "img/4.png"],
+			body_pic: ["img/5.png"],
+			tail_pic: ["img/6.png", "img/7.png", "img/8.png", "img/9.png"]
+		}
+
+		var map = new Map(20,20,600,600)
+		var food = new Food(2,6,'img/food.jpg')
+		var block = new Block("img/block.png",)
+		var snake = new Snake(snakeObj)
+		//初始化游戏
+		var game = new Game(map,food,block,snake)
+
+
+	</script>
+</body>
+</html>
