@@ -9,7 +9,7 @@ https://xufyi.github.io/Gluttonous_snake-game/index.html
 效果预览:
 -----
 <div align=center>
-   <img src="https://github.com/Xufyi/Gluttonous_snake-game/blob/master/snakeGame.gif" width="485" height="465">  
+   <img src="https://github.com/Xufyi/Gluttonous_snake-game/blob/master/snakeGame.gif" width="400">  
   
 </div>
 
@@ -54,3 +54,8 @@ img属性
    注意：蛇头的转向和按下方向键右关，蛇尾的转向和蛇尾上一节有关。
 6、完善食物的渲染
    蛇吃到食物后，食物重新渲染，加判断，如果食物出现在蛇身上，或者障碍物上，重新渲染。
+
+遇到2个BUg:
+----
+1、蛇撞到后会把头扎进去，原因是gameover后没有设置flag = false，停止下面的蛇渲染
+2、bug，没有判断37-40的方向键，导致，如果按下其他键，蛇最终走到一个点上。
