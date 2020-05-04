@@ -6,7 +6,7 @@
 -----
 https://xufyi.github.io/Gluttonous_snake-game/index.html
 
-效果预览:
+效果预览:（演示图片可能加载过慢，直接点击在线预览吧！）
 -----
 <div align=center>
    <img src="https://github.com/Xufyi/Gluttonous_snake-game/blob/master/snakeGame.gif" width="400"  height="384">  
